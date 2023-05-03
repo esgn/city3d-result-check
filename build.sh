@@ -2,7 +2,7 @@
 
 BUILD_DIR="Release"
 
-# If we want to download CGAL and use it as header only
+# Download CGAL and use it as header only
 CGAL_VERSION="5.2.2"
 if [ ! -d "CGAL-$CGAL_VERSION" ]
 then
@@ -21,7 +21,7 @@ then
     rm -rf $BUILD_DIR
 fi
 
-# Compile City3D release executables
+# Compile executable
 mkdir $BUILD_DIR
 cd $BUILD_DIR
 cmake -DCMAKE_BUILD_TYPE=Release ..

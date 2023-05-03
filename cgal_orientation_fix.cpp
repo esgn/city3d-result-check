@@ -25,9 +25,9 @@ namespace PMP = CGAL::Polygon_mesh_processing;
 int main(int argc, char *argv[])
 {
   // input parameters
-  const std::string filename = "23_result.obj";
-  const char *outfilename = "23_result_clean.obj";
-  const int output_interesecting_faces = 1;
+  const std::string filename = (argc > 1) ? argv[1] : CGAL::data_file_path("23_result.obj");
+  const char *outfilename = (argc > 2) ? argv[2] : "23_result_fixed.obj";
+  const int output_interesecting_faces = (argc > 3) ? std::stoi(argv[3]) : 1;
 
   std::vector<Point> points;
   std::vector<std::vector<std::size_t>> polygons;

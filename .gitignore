@@ -1,4 +1,7 @@
 CGAL-*/
 Release/
+__pycache__/
 pair_*.obj
+23_result_*.obj
 CMakeLists.txt
+
