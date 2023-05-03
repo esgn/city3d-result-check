@@ -1,0 +1,4 @@
+CGAL-*/
+Release/
+pair_*.obj
+CMakeLists.txt
